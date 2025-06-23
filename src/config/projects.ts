@@ -57,7 +57,7 @@ export const projects: Array<ProjectItemType> = [
     description: 'The heart of this experience is the Language Learning Model (LLM) that drives the intelligent interactions of the virtual companion. This technology empowers the virtual companion to engage in dynamic, meaningful conversations, learn from interactions, and offer a sense of presence and responsiveness unparalleled by conventional digital companions.',
     link: { href: 'https://www.youtube.com/watch?v=HwGdsb7OvtI&ab_channel=DuoWang', label: 'GitHub Cards' },
     tags: ['Quest3', 'Mixed Reality', 'Unity'],
-    image: '/images/icon/virtual_pet.jpg'
+    image: '/images/icon/Virtual_Pet.jpg'
   },
   // {
   //   name: 'Place Holder',
