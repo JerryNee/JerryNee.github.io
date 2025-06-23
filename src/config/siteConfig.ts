@@ -1,5 +1,5 @@
 // site config
-export const utm_source = 'derek-portfolio'
+export const utm_source = 'jianwei-portfolio'
 
 
 // navigation config
@@ -14,16 +14,16 @@ export const footerItems: Array<NavItemType> = [
     href: '/'
   },
   {
-    name: 'About',
-    href: '/about'
-  },
-  {
     name: 'Projects',
     href: '/projects'
   },
   {
-    name: 'Blogs',
-    href: '/blogs'
+    name: 'Publications',
+    href: '/publications'
+  },
+  {
+    name: 'Resume',
+    href: '/resume'
   }
 ]
 
@@ -33,15 +33,15 @@ export const navItems: Array<NavItemType> = [
     href: '/'
   },
   {
-    name: 'About',
-    href: '/about'
-  },
-  {
     name: 'Projects',
     href: '/projects'
   },
   {
-    name: 'Blogs',
-    href: '/blogs'
+    name: 'Publications',
+    href: '/publications'
+  },
+  {
+    name: 'Resume',
+    href: '/resume'
   }
 ]

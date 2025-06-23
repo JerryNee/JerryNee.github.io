@@ -4,6 +4,7 @@ export type ProjectItemType = {
   description: string
   link: { href: string; label: string }
   tags: string[]
+  image?: string
 }
 
 export type ActivityItemType = {
@@ -20,47 +21,55 @@ export const awardsIntro = "Recognition for academic and professional achievemen
 
 export const awards: Array<ActivityItemType> = [
   {
-    name: 'Outstanding Teacher Award',
-    description: '',
-    date: '2024',
-    location: 'SCLS, Shanghai',
+    name: 'Franz Hohn and JP Nash Scholarship',
+    description: 'This award was established in 1997 by the late Gene Golub (BS Math \'53, MA Stats \'54, PhD Math \'59, Hon. DSc \'91), the Fletcher Jones Professor of CS at Stanford University. Golub established this scholarship in honor of two Illinois professors who influenced his life: Franz Hohn and John Purcell “Jack” Nash, pioneers in the field of applied and computational mathematics.',
+    date: '2025',
+    location: 'Champaign, IL',
   },
   {
-    name: 'Zhui Ying Award',
-    description: '',
-    date: '2023',
-    location: 'Qingpu, Shanghai',
+    name: 'Dean\'s List recognition',
+    description: 'Students must have successfully completed at least twelve (12) credit hours for traditional letter grades and have been within the top 20% of iSchool undergraduate students to earn this honor.',
+    date: '2024-2025',
+    location: 'Champaign, IL',
+  },
+  {
+    name: 'USACO Gold Division',
+    description: 'The USACO holds web-based algorithmic programming contests during the academic year, usually four total, from December through early spring, one per month.',
+    date: '2021',
+    location: 'US',
   },
 ]
 
 // Research & Projects
-export const projectHeadLine = "Research & Projects"
-export const projectIntro = "Academic research and technical projects I've worked on."
+export const projectHeadLine = "Projects"
+export const projectIntro = "Technical projects I've worked on."
 
 export const projects: Array<ProjectItemType> = [
   {
-    name: 'Student Final Project Portfolio',
-    description: 'Static website portfolio',
-    link: { href: 'scls-cs.com', label: 'GitHub Cards' },
-    tags: ['Website', 'Next.js', 'TailwindCSS', 'DaisyUI', 'Portfolio']
+    name: 'Lumbar Puncture Virtual Trainer',
+    description: 'This Vision Pro app offers an immersive tutorial for performing lumbar punctures, combining 3D anatomical guidance, hand tracking, and an AI instructor to simulate the procedure step by step. Designed to make primary care training more accessible and efficient.',
+    link: { href: 'https://youtu.be/5bFLbc3EMJY', label: 'GitHub Cards' },
+    tags: ['Xcode', 'VisionOS', 'AWS', 'Medical Training'],
+    image: '/images/icon/LPVT.png'
   },
   {
-    name: 'Seeking DNA',
-    description: '2022 SCLS Hackathon',
-    link: { href: 'https://scls-cs.gitbook.io/scls-apcs-lab/lab5-dna', label: 'Hackathon' },
-    tags: ['Hackathon', 'Java']
+    name: 'Virtual Pet',
+    description: 'The heart of this experience is the Language Learning Model (LLM) that drives the intelligent interactions of the virtual companion. This technology empowers the virtual companion to engage in dynamic, meaningful conversations, learn from interactions, and offer a sense of presence and responsiveness unparalleled by conventional digital companions.',
+    link: { href: 'https://www.youtube.com/watch?v=HwGdsb7OvtI&ab_channel=DuoWang', label: 'GitHub Cards' },
+    tags: ['Quest3', 'Mixed Reality', 'Unity'],
+    image: '/images/icon/virtual_pet.jpg'
   },
   {
-    name: 'Texas Holdem Poker Judge',
-    description: '2024 SCLS Hackathon',
-    link: { href: 'https://onecompiler.com/challenges/42yf4n5yn/scls-hackathon', label: 'Hackathon' },
-    tags: ['Hackathon']
+    name: 'Place Holder',
+    description: 'xxx',
+    link: { href: '', label: 'GitHub Cards' },
+    tags: ['xxx']
   },
   {
-    name: 'AI Camp Course Development',
-    description: 'Developed a comprehensive AI curriculum for high school students, incorporating real-world projects and startup concepts.',
-    link: { href: 'https://scls-cs.gitbook.io/ai-camp', label: 'View Course' },
-    tags: ['Education', 'AI']
+    name: 'Place Holder',
+    description: 'xxx',
+    link: { href: '', label: 'GitHub Cards' },
+    tags: ['xxx']
   },
 ]
 

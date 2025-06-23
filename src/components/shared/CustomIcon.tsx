@@ -8,6 +8,7 @@ import {
   Envelope,
   GraduationCap,
   Coffee,
+  Laptop,
   Butterfly,
   Pill,
   WechatLogo,
@@ -39,6 +40,8 @@ export function CustomIcon({
       return <Envelope size={size} weight="duotone" />
     case 'college':
       return <GraduationCap size={size} weight="duotone" />
+    case 'labtop':
+      return <Laptop size={size} weight="duotone" />
     case 'coffee':
       return <Coffee size={size} weight="duotone" />
     case 'pill':

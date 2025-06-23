@@ -194,7 +194,7 @@ function Avatar({
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
-          large ? 'h-16 w-16' : 'h-9 w-9',
+          large ? 'h-48 w-48' : 'h-9 w-9',
         )}
         priority
       />
@@ -357,7 +357,7 @@ export function Header() {
                   <div className="flex flex-row items-center gap-4">
                     <Avatar
                       large
-                      className="block h-16 w-16 origin-left"
+                      className="block h-48 w-48 origin-left"
                       style={{ transform: 'var(--avatar-image-transform)' }}
                     />
                     <div
@@ -367,7 +367,7 @@ export function Header() {
                         transform: 'var(--avatar-hi-transform)'
                       }}
                     >
-                      Hi,{' '}
+                      <span>Hi,&nbsp;</span>
                       <TypingAnimation
                         className="text-3xl md:text-6xl font-bold tracking-tight"
                         text={`I'm ${name} `}
