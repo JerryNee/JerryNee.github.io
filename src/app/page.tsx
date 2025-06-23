@@ -107,9 +107,15 @@ export default async function Home() {
           <div className="flex flex-col gap-8 text-sm leading-relaxed">
             {publications.map((pub, index) => (
               <div key={index}>
-                <p className="text-muted-foreground">
-                  <span className="font-medium">{index + 1}. {pub.authors}</span> ({pub.year}).
-                </p>
+                <p
+                  className="text-muted-foreground"
+                  dangerouslySetInnerHTML={{
+                    __html: `<span class="font-medium">${pub.authors.replace(
+                      'Ni, J.',
+                      '<strong>Ni, J.</strong>'
+                    )}</span> (${pub.year}).`,
+                  }}
+                />
                 <p className="font-semibold">{pub.title}</p>
                 <p className="italic text-muted-foreground">{pub.venue}</p>
               </div>
