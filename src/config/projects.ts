@@ -59,18 +59,18 @@ export const projects: Array<ProjectItemType> = [
     tags: ['Quest3', 'Mixed Reality', 'Unity'],
     image: '/images/icon/virtual_pet.jpg'
   },
-  {
-    name: 'Place Holder',
-    description: 'xxx',
-    link: { href: '', label: 'GitHub Cards' },
-    tags: ['xxx']
-  },
-  {
-    name: 'Place Holder',
-    description: 'xxx',
-    link: { href: '', label: 'GitHub Cards' },
-    tags: ['xxx']
-  },
+  // {
+  //   name: 'Place Holder',
+  //   description: 'xxx',
+  //   link: { href: '', label: 'GitHub Cards' },
+  //   tags: ['xxx']
+  // },
+  // {
+  //   name: 'Place Holder',
+  //   description: 'xxx',
+  //   link: { href: '', label: 'GitHub Cards' },
+  //   tags: ['xxx']
+  // },
 ]
 
 // Hobbies & Volunteer
