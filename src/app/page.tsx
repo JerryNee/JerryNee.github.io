@@ -19,9 +19,10 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-9">
+        <div className="mt-[clamp(6rem,15vh,20rem)]" />
         {/* personal info */}
-        <div className="mt-8 md:mt-24 flex flex-row items-center gap-6">
-          <div className='md:col-span-5 md:mt-12'>
+        <div className="mt-8 md:mt-24 flex flex-col md:flex-row items-center gap-6">
+          <div className='md:col-span-5 mt-6 md:mt-12'>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl opacity-80">
               {headline}
             </h2>
@@ -31,7 +32,7 @@ export default async function Home() {
             <SocialLinks className='md:mt-24'/>
           </div>
           <div className="md:col-span-7 flex items-center justify-center">
-            <div className="w-[420px] h-[420px]">
+            <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px]">
               <IconCloud iconSlugs={techIcons} />
             </div>
           </div>

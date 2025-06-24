@@ -373,7 +373,7 @@ export function Header() {
                         text={`I'm ${name} `}
                         duration={150}
                       />
-                      👋
+                      {/* 👋 */}
                     </div>
                   </div>
                 </div>
