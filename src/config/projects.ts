@@ -59,12 +59,13 @@ export const projects: Array<ProjectItemType> = [
     tags: ['Quest3', 'Mixed Reality', 'Unity'],
     image: '/images/icon/Virtual_Pet.jpg'
   },
-  // {
-  //   name: 'Place Holder',
-  //   description: 'xxx',
-  //   link: { href: '', label: 'GitHub Cards' },
-  //   tags: ['xxx']
-  // },
+  {
+    name: 'Empathy VR',
+    description: 'Empathy VR is a Meta Quest 3 training simulation built in Unreal Engine 5 to help Police Training Institute (PTI) officers practice empathy-based de-escalation. Featuring an emotionally responsive digital human, the experience simulates high-stakes crises with adaptive dialogue and facial animations, developed in collaboration with psychologists and trainers.',
+    link: { href: 'https://youtu.be/k70PPH1M1C4', label: 'GitHub Cards' },
+    tags: ['Quest3', "Virtual Reality", "Unreal Engine"],
+    image: '/images/icon/empathy_vr.png'
+  },
   // {
   //   name: 'Place Holder',
   //   description: 'xxx',
