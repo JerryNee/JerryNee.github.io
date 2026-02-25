@@ -10,6 +10,13 @@ export type CareerItemType = {
   
 export const careerList: Array<CareerItemType> = [
     {
+      company: 'Immersive Intelligence Summer Camp at UIUC',
+      title: 'Co-founder & Curriculum Lead',
+      logo: 'school',
+      start: '2025.8',
+      end: 'Present'
+    },
+    {
       company: 'Carle Illinois College of Medicine',
       title: 'XR Developer',
       logo: 'labtop',
