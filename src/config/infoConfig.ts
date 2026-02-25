@@ -21,13 +21,19 @@ export const aboutParagraphs = [
 // publications
 export const publications = [
   {
-    authors: 'Wang, D., Ni, J., Zhou, Y., Ding, W., Song, W., Yao, M., Cao, C.',
-    year: 2025,
-    title: 'Object-Tracking-Based Medical Simulation with AI and Mixed-Reality: A Use Case for Procedural Skills Training',
-    venue: 'UIST 2025, In Progress'
+    authors: 'Wang, D., Ni, J., Zhou, Y., Ding, W., Song, W., Jamison, S., Yao, M., Cao, C.',
+    year: 2026,
+    title: 'SPATIALTUTOR: Object-Aware Mixed Reality Training for Procedural Medical Skills Training with AI-Driven Support',
+    venue: "Proceedings of the 2026 IEEE International Conference on Artificial Intelligence and Virtual Reality (IEEE AIxVR '26), Accepted"
   },
   {
-    authors: 'Wan,D., Song, W., Ni, J., Zheng, Q., Freeman, G.',
+    authors: 'Wang, D., Song, W., Ni, J., Zheng, Q., Zhou, Y., Liang, K., Yao, M., Cao, C.',
+    year: 2026,
+    title: 'Should the AI Speak First? Evaluating Proactive vs. Reactive Facilitation in Mixed-Reality Medical Training',
+    venue: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26), Accepted"
+  },
+  {
+    authors: 'Wan, D., Song, W., Ni, J., Zheng, Q., Freeman, G.',
     year: 2025,
     title: '"Is My Dog Too Polite To Me?": Designing for Innovating Virtual Companionship Through Large Language Model-Powered Mixed Reality Virtual Pets',
     venue: 'DIS 2025, In Progress'
