@@ -37,7 +37,7 @@ export const publications = [
     year: 2025,
     title: '"Is My Dog Too Polite To Me?": Designing for Innovating Virtual Companionship Through Large Language Model-Powered Mixed Reality Virtual Pets',
     venue: 'DIS 2025, In Progress'
-  },
+  }
 ]
 
 export const publicationHeadLine = "Publications"
