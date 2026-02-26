@@ -12,7 +12,7 @@ export const careerList: Array<CareerItemType> = [
     {
       company: 'Immersive Intelligence Summer Camp at UIUC',
       title: 'Co-founder & Curriculum Lead',
-      logo: 'school',
+      logo: 'college',
       start: '2025.8',
       end: 'Present'
     },
