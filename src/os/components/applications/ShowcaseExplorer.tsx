@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Navigate,
+    Routes,
+    Route,
+} from 'react-router-dom';
 import Home from '../showcase/Home';
 import About from '../showcase/About';
 import Window from '../os/Window';
@@ -40,14 +45,33 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route
-                            path="/projects/software"
+                            path="/projects/xr-ai"
                             element={<SoftwareProjects />}
                         />
                         <Route
-                            path="/projects/music"
+                            path="/projects/publications"
                             element={<MusicProjects />}
                         />
-                        <Route path="/projects/art" element={<ArtProjects />} />
+                        <Route
+                            path="/projects/awards"
+                            element={<ArtProjects />}
+                        />
+                        <Route
+                            path="/projects/software"
+                            element={<Navigate to="/projects/xr-ai" replace />}
+                        />
+                        <Route
+                            path="/projects/music"
+                            element={
+                                <Navigate to="/projects/publications" replace />
+                            }
+                        />
+                        <Route
+                            path="/projects/art"
+                            element={
+                                <Navigate to="/projects/awards" replace />
+                            }
+                        />
                     </Routes>
                 </div>
             </Router>

@@ -6,7 +6,7 @@ export interface MusicProjectsProps {}
 const MusicProjects: React.FC<MusicProjectsProps> = () => {
     return (
         <div className="site-page-content">
-            <h1>Papers</h1>
+            <h1>Publications</h1>
             <h3>Publications</h3>
             <br />
             <p>
