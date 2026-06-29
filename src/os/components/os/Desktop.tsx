@@ -4,8 +4,18 @@ import ShowcaseExplorer from '../applications/ShowcaseExplorer';
 import DoomShareware from '../applications/DoomShareware';
 import CommanderKeen from '../applications/CommanderKeen';
 import FreecivWeb from '../applications/FreecivWeb';
+import {
+    AboutTxt,
+    AuthorizedGamesReadme,
+    ContactCard,
+    MusicDisk,
+    PhotosFolder,
+    ProjectsFolder,
+    ResearchNotes,
+    ResumePdf,
+    ThisComputer,
+} from '../applications/DesktopFiles';
 import ShutdownSequence from './ShutdownSequence';
-// import ThisComputer from '../applications/ThisComputer';
 import Henordle from '../applications/Henordle';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
@@ -24,17 +34,65 @@ const APPLICATIONS: {
         component: React.FC<ExtendedWindowAppProps<any>>;
     };
 } = {
-    // computer: {
-    //     key: 'computer',
-    //     name: 'This Computer',
-    //     shortcutIcon: 'computerBig',
-    //     component: ThisComputer,
-    // },
+    computer: {
+        key: 'computer',
+        name: 'This Computer',
+        shortcutIcon: 'computerBig',
+        component: ThisComputer,
+    },
     showcase: {
         key: 'showcase',
         name: 'My Showcase',
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
+    },
+    resume: {
+        key: 'resume',
+        name: 'Resume.pdf',
+        shortcutIcon: 'pdfIcon',
+        component: ResumePdf,
+    },
+    projectsFolder: {
+        key: 'projectsFolder',
+        name: 'Projects',
+        shortcutIcon: 'folderIcon',
+        component: ProjectsFolder,
+    },
+    aboutTxt: {
+        key: 'aboutTxt',
+        name: 'ABOUT.TXT',
+        shortcutIcon: 'textFileIcon',
+        component: AboutTxt,
+    },
+    researchNotes: {
+        key: 'researchNotes',
+        name: 'Research Notes',
+        shortcutIcon: 'textFileIcon',
+        component: ResearchNotes,
+    },
+    contactCard: {
+        key: 'contactCard',
+        name: 'Contact Card',
+        shortcutIcon: 'linkIcon',
+        component: ContactCard,
+    },
+    photos: {
+        key: 'photos',
+        name: 'Photos',
+        shortcutIcon: 'photoIcon',
+        component: PhotosFolder,
+    },
+    musicDisk: {
+        key: 'musicDisk',
+        name: 'Music Disk',
+        shortcutIcon: 'musicDiskIcon',
+        component: MusicDisk,
+    },
+    gamesReadme: {
+        key: 'gamesReadme',
+        name: 'GAMES-README.TXT',
+        shortcutIcon: 'textFileIcon',
+        component: AuthorizedGamesReadme,
     },
     doomShareware: {
         key: 'doomShareware',
@@ -102,12 +160,6 @@ const Desktop: React.FC<DesktopProps> = (props) => {
                     );
                 },
             });
-        });
-
-        newShortcuts.forEach((shortcut) => {
-            if (shortcut.shortcutName === 'My Showcase') {
-                shortcut.onOpen();
-            }
         });
 
         setShortcuts(newShortcuts);
@@ -201,6 +253,15 @@ const Desktop: React.FC<DesktopProps> = (props) => {
         [getHighestZIndex]
     );
 
+    const getShortcutPosition = (index: number) => {
+        const column = index % 4;
+        const row = Math.floor(index / 4);
+        return {
+            left: column * 96,
+            top: row * 94,
+        };
+    };
+
     return !shutdown ? (
         <div style={styles.desktop}>
             {/* For each window in windows, loop over and render  */}
@@ -228,9 +289,11 @@ const Desktop: React.FC<DesktopProps> = (props) => {
                 {shortcuts.map((shortcut, i) => {
                     return (
                         <div
-                            style={Object.assign({}, styles.shortcutContainer, {
-                                top: i * 104,
-                            })}
+                            style={Object.assign(
+                                {},
+                                styles.shortcutContainer,
+                                getShortcutPosition(i)
+                            )}
                             key={shortcut.shortcutName}
                         >
                             <DesktopShortcut

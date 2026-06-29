@@ -108,7 +108,7 @@ const DesktopShortcut: React.FC<DesktopShortcutProps> = ({
                         }
                     )}
                 />
-                <Icon icon={icon} style={styles.icon} />
+                <Icon icon={icon} style={styles.icon} size={32} />
             </div>
             <div
                 className={
@@ -158,6 +158,10 @@ const styles: StyleSheetCSS = {
     iconContainer: {
         cursor: 'pointer',
         paddingBottom: 3,
+    },
+    icon: {
+        width: 32,
+        height: 32,
     },
     iconOverlay: {
         position: 'absolute',

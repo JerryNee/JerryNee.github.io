@@ -7,6 +7,12 @@ import computerBig from './computerBig.png';
 import computerSmall from './computerSmall.png';
 import myComputer from './myComputer.png';
 import showcaseIcon from './showcaseIcon.png';
+import folderIcon from './folderIcon.svg';
+import textFileIcon from './textFileIcon.svg';
+import pdfIcon from './pdfIcon.svg';
+import linkIcon from './linkIcon.svg';
+import photoIcon from './photoIcon.svg';
+import musicDiskIcon from './musicDiskIcon.svg';
 import doomSharewareIcon from './doomSharewareIcon.svg';
 import keenIcon from './keenIcon.svg';
 import freecivIcon from './freecivIcon.svg';
@@ -27,6 +33,12 @@ const icons = {
     computerSmall: computerSmall,
     myComputer: myComputer,
     showcaseIcon: showcaseIcon,
+    folderIcon: folderIcon,
+    textFileIcon: textFileIcon,
+    pdfIcon: pdfIcon,
+    linkIcon: linkIcon,
+    photoIcon: photoIcon,
+    musicDiskIcon: musicDiskIcon,
     doomSharewareIcon: doomSharewareIcon,
     keenIcon: keenIcon,
     freecivIcon: freecivIcon,
