@@ -7,9 +7,9 @@ import computerBig from './computerBig.png';
 import computerSmall from './computerSmall.png';
 import myComputer from './myComputer.png';
 import showcaseIcon from './showcaseIcon.png';
-import platformIcon from './platformIcon.svg';
-import mazeIcon from './mazeIcon.svg';
-import barrelIcon from './barrelIcon.svg';
+import doomSharewareIcon from './doomSharewareIcon.svg';
+import keenIcon from './keenIcon.svg';
+import freecivIcon from './freecivIcon.svg';
 import henordleIcon from './henordleIcon.png';
 import credits from './credits.png';
 import volumeOn from './volumeOn.png';
@@ -27,9 +27,9 @@ const icons = {
     computerSmall: computerSmall,
     myComputer: myComputer,
     showcaseIcon: showcaseIcon,
-    platformIcon: platformIcon,
-    mazeIcon: mazeIcon,
-    barrelIcon: barrelIcon,
+    doomSharewareIcon: doomSharewareIcon,
+    keenIcon: keenIcon,
+    freecivIcon: freecivIcon,
     volumeOn: volumeOn,
     volumeOff: volumeOff,
     credits: credits,

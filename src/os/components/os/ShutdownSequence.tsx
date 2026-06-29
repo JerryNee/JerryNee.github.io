@@ -84,7 +84,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     Did you not read the last message?${_S} This computer will A${_F}L${_F}W${_F}A${_F}Y${_F}S${_F} reboot, the shutdown sequence is just here for show. It's not actually doing anything.
     ${_M}
     I literally spent months on this website to give you other things to do.
-    You can play Pixel Plumber, Dot Maze, Barrel Climb... but all you wanna do is shut the computer down.
+    You can play Doom Shareware, Commander Keen, Freeciv Web... but all you wanna do is shut the computer down.
     ${_L}
     |Goodbye Again!|
     ${_M}

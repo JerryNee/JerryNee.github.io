@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Colors from '../../constants/colors';
 import ShowcaseExplorer from '../applications/ShowcaseExplorer';
-import PixelPlumber from '../applications/PixelPlumber';
-import DotMaze from '../applications/DotMaze';
-import BarrelClimb from '../applications/BarrelClimb';
+import DoomShareware from '../applications/DoomShareware';
+import CommanderKeen from '../applications/CommanderKeen';
+import FreecivWeb from '../applications/FreecivWeb';
 import ShutdownSequence from './ShutdownSequence';
 // import ThisComputer from '../applications/ThisComputer';
 import Henordle from '../applications/Henordle';
@@ -36,23 +36,23 @@ const APPLICATIONS: {
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
     },
-    platform: {
-        key: 'platform',
-        name: 'Pixel Plumber',
-        shortcutIcon: 'platformIcon',
-        component: PixelPlumber,
+    doomShareware: {
+        key: 'doomShareware',
+        name: 'Doom Shareware',
+        shortcutIcon: 'doomSharewareIcon',
+        component: DoomShareware,
     },
-    maze: {
-        key: 'maze',
-        name: 'Dot Maze',
-        shortcutIcon: 'mazeIcon',
-        component: DotMaze,
+    commanderKeen: {
+        key: 'commanderKeen',
+        name: 'Commander Keen',
+        shortcutIcon: 'keenIcon',
+        component: CommanderKeen,
     },
-    barrel: {
-        key: 'barrel',
-        name: 'Barrel Climb',
-        shortcutIcon: 'barrelIcon',
-        component: BarrelClimb,
+    freecivWeb: {
+        key: 'freecivWeb',
+        name: 'Freeciv Web',
+        shortcutIcon: 'freecivIcon',
+        component: FreecivWeb,
     },
     henordle: {
         key: 'henordle',
