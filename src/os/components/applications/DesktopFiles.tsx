@@ -73,7 +73,7 @@ export const ThisComputer: React.FC<WindowAppProps> = (props) => (
         left={96}
         width={600}
         height={430}
-        bottomLeftText="HHOS local machine"
+        bottomLeftText="JNOS local machine"
     >
         <h2 style={styles.title}>Jianwei Ni OS</h2>
         <p style={styles.lead}>{headline}</p>

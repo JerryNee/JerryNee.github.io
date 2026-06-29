@@ -13,7 +13,7 @@ const CREDITS = [
     {
         title: 'Original 3D Site Assets',
         rows: [
-            ['Henry Heffernan', 'Original concept, texturing, composition, and UV'],
+            ['Jianwei Ni', 'Original concept, texturing, composition, and UV'],
             ['Mickael Boitte', 'Computer Model'],
             ['Sean Nicolas', 'Environment Models'],
         ],
@@ -21,7 +21,7 @@ const CREDITS = [
     {
         title: 'Sound Design',
         rows: [
-            ['Henry Heffernan', 'Original mixing, composition, and foley'],
+            ['Jianwei Ni', 'Original mixing, composition, and foley'],
             ['Sound Cassette', 'Office Ambience'],
             ['Windows 95 Startup Sound', 'Microsoft'],
         ],

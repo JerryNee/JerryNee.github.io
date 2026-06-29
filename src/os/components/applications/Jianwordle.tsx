@@ -2,9 +2,9 @@ import React from 'react';
 import Window from '../os/Window';
 import Wordle from '../wordle/Wordle';
 
-export interface HenordleAppProps extends WindowAppProps {}
+export interface JianwordleAppProps extends WindowAppProps {}
 
-const HenordleApp: React.FC<HenordleAppProps> = (props) => {
+const JianwordleApp: React.FC<JianwordleAppProps> = (props) => {
     return (
         <Window
             top={20}
@@ -12,7 +12,7 @@ const HenordleApp: React.FC<HenordleAppProps> = (props) => {
             width={600}
             height={860}
             windowBarIcon="windowGameIcon"
-            windowTitle="Henordle"
+            windowTitle="Jianwordle"
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
@@ -25,4 +25,4 @@ const HenordleApp: React.FC<HenordleAppProps> = (props) => {
     );
 };
 
-export default HenordleApp;
+export default JianwordleApp;

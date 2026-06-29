@@ -16,7 +16,7 @@ import {
     ThisComputer,
 } from '../applications/DesktopFiles';
 import ShutdownSequence from './ShutdownSequence';
-import Henordle from '../applications/Henordle';
+import Jianwordle from '../applications/Jianwordle';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import { IconName } from '../../assets/icons';
@@ -112,11 +112,11 @@ const APPLICATIONS: {
         shortcutIcon: 'freecivIcon',
         component: FreecivWeb,
     },
-    henordle: {
-        key: 'henordle',
-        name: 'Henordle',
-        shortcutIcon: 'henordleIcon',
-        component: Henordle,
+    jianwordle: {
+        key: 'jianwordle',
+        name: 'Jianwordle',
+        shortcutIcon: 'jianwordleIcon',
+        component: Jianwordle,
     },
     credits: {
         key: 'credits',

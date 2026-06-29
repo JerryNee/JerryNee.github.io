@@ -16,7 +16,7 @@ import musicDiskIcon from './musicDiskIcon.svg';
 import doomSharewareIcon from './doomSharewareIcon.svg';
 import keenIcon from './keenIcon.svg';
 import freecivIcon from './freecivIcon.svg';
-import henordleIcon from './henordleIcon.png';
+import jianwordleIcon from './jianwordleIcon.png';
 import credits from './credits.png';
 import volumeOn from './volumeOn.png';
 import volumeOff from './volumeOff.png';
@@ -45,7 +45,7 @@ const icons = {
     volumeOn: volumeOn,
     volumeOff: volumeOff,
     credits: credits,
-    henordleIcon: henordleIcon,
+    jianwordleIcon: jianwordleIcon,
     close: close,
     windowGameIcon: windowGameIcon,
     windowExplorerIcon: windowExplorerIcon,
