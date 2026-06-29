@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Colors from '../../constants/colors';
 import ShowcaseExplorer from '../applications/ShowcaseExplorer';
-import Doom from '../applications/Doom';
-import OregonTrail from '../applications/OregonTrail';
+import PixelPlumber from '../applications/PixelPlumber';
+import DotMaze from '../applications/DotMaze';
+import BarrelClimb from '../applications/BarrelClimb';
 import ShutdownSequence from './ShutdownSequence';
 // import ThisComputer from '../applications/ThisComputer';
 import Henordle from '../applications/Henordle';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
-import Scrabble from '../applications/Scrabble';
 import { IconName } from '../../assets/icons';
 import Credits from '../applications/Credits';
 
@@ -36,23 +36,23 @@ const APPLICATIONS: {
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
     },
-    trail: {
-        key: 'trail',
-        name: 'The Oregon Trail',
-        shortcutIcon: 'trailIcon',
-        component: OregonTrail,
+    platform: {
+        key: 'platform',
+        name: 'Pixel Plumber',
+        shortcutIcon: 'platformIcon',
+        component: PixelPlumber,
     },
-    doom: {
-        key: 'doom',
-        name: 'Doom',
-        shortcutIcon: 'doomIcon',
-        component: Doom,
+    maze: {
+        key: 'maze',
+        name: 'Dot Maze',
+        shortcutIcon: 'mazeIcon',
+        component: DotMaze,
     },
-    scrabble: {
-        key: 'scrabble',
-        name: 'Scrabble',
-        shortcutIcon: 'scrabbleIcon',
-        component: Scrabble,
+    barrel: {
+        key: 'barrel',
+        name: 'Barrel Climb',
+        shortcutIcon: 'barrelIcon',
+        component: BarrelClimb,
     },
     henordle: {
         key: 'henordle',

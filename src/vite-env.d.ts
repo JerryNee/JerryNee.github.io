@@ -22,11 +22,6 @@ declare global {
     }
   >
 
-  interface Window {
-    emulators?: {
-      pathPrefix?: string
-    }
-  }
 }
 
 declare module '*.glsl' {
@@ -47,15 +42,6 @@ declare module '*.mp3' {
 declare module '*.pdf' {
   const src: string
   export default src
-}
-
-declare module 'js-dos' {
-  export type DosPlayer = {
-    run: (bundleUrl: string) => Promise<unknown> | void
-    stop: () => void
-  }
-
-  export type DosPlayerFactoryType = (root: HTMLElement) => DosPlayer
 }
 
 export {}
