@@ -2,6 +2,7 @@
   "name": "jianwei-crt-portfolio",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "npm@10.9.2",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
