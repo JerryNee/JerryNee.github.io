@@ -87,6 +87,9 @@ web_modules/
 .next
 out
 
+# Local reverse-engineering notes, captured assets, and visual QA screenshots
+reconstruction/
+
 # Nuxt.js build / generate output
 .nuxt
 dist
